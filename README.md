@@ -1,5 +1,7 @@
 # js 'Promise' based JSON bookshelf
 
+<a href="example.png" target="_blank"><img src="example.png" height="500px"></a>
+
 Exercise for my Coder Academy bootcamp. Messy, hacky, comment-riddled code for the sake of learning. First time using JS to "fetch" and return a 'Promise'- We set up a simple "Books" JSON server and requested to it using 'fetch' in JS.
 
 After that, worked with the DOM to display it in the view. Added a few divs, messed with ID assignment and the like. Is fun!
