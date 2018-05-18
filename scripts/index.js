@@ -27,21 +27,28 @@ const library = []
 const libraryDiv = document.getElementById('libraryDiv')
 
 // Let's feed it some books:
-getBooks('http://localhost:3000/books')
+getBooks('/books.json')
+// getBooks('http://localhost:3000/books')
 
 // And again! Twice, now. Same books, though.
-getBooks('http://localhost:3000/books')
+getBooks('/books2.json')
+// getBooks('http://localhost:3000/books')
 
 // Our main function: Takes a URI for a json Books object, and then deals with
 // the promise return, sending it to "updateLibrary", which makes bookshelves...
 function getBooks(uri) {
   let request = fetch(uri)
+  parseRequest(request)
+}
+
+function parseRequest(request) {
+  // this part handles the request as it returns (as a 'promise')
+  // with ROCKETSHIP FUNCTIONS zOMG
   request
-     // with ROCKETSHIPS zOMG
     .then(response => response.json())
     .then(parsedJson => { updateLibrary(parsedJson) })
     .catch(error => console.log(error.message))
-  }
+}
     // Promise handling without the Rocket Syntax:
     // request
     //   .then(function(response){
@@ -98,6 +105,14 @@ function makeBookElement(book) {
   let bookElement = document.createElement('li')
   bookElement.className = 'book'
   bookElement.textContent = book.title
+  bookElement.appendChild(document.createElement('br'))
+  
+  let bookImage = document.createElement('img')
+  bookImage.src = book.cover_data
+  bookImage.height = '150'
+  
+  bookElement.appendChild(bookImage)
+
   return bookElement
 }
 
