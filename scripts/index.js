@@ -100,3 +100,22 @@ function makeBookElement(book) {
   bookElement.textContent = book.title
   return bookElement
 }
+
+
+
+
+//////////////////////////////////
+
+// Just doing some simple stuff for class
+
+const elephant = document.getElementById('myDiv')
+
+elephant.innerText = "Hi Serina"
+elephant.style.backgroundColor = 'red'
+
+const drewDiv = document.createElement('div')
+drewDiv.style.backgroundColor = 'pink'
+drewDiv.innerText = "Drew's Div! Yay!"
+drewDiv.style.color = "black"
+
+elephant.appendChild(drewDiv)
