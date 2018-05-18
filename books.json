@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Ancillary Justice",
+        "description": "Science Fiction",
+        "isbn": "9786053754909",
+        "author": "Ann Leckie",
+        "created_at": "2018-05-14T00:16:50.697Z",
+        "updated_at": "2018-05-14T00:16:50.697Z",
+        "cover_data": "https://images.gr-assets.com/books/1397215917l/17333324.jpg"
+    },
+    {
+        "id": 2,
+        "title": "The Hundred Thousand Kingdoms",
+        "description": "Fantasy",
+        "isbn": "9780316075978",
+        "author": "NK Jemisin",
+        "created_at": "2018-05-14T00:16:50.702Z",
+        "updated_at": "2018-05-14T00:16:50.702Z",
+        "cover_data": "https://www.hachettebookgroup.com/wp-content/uploads/2017/06/9780316043922.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Fledgling",
+        "description": "Fantasy",
+        "isbn": "9780446178891",
+        "author": "Octavia E Butler",
+        "created_at": "2018-05-14T00:16:50.704Z",
+        "updated_at": "2018-05-14T00:16:50.704Z",
+        "cover_data": "https://images.gr-assets.com/books/1441479816l/60925.jpg"
+    }
+]
